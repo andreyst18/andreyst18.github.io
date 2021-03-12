@@ -2,30 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS-Start</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-  <h2>Домашнее задание, модуль 9</h2>
-  <div class="frame">
-    <ul>
-      <li>
-        <a href="task1/index.html">Задача 1</a>
-      </li>
-      <li>
-        <a href="task2/index.html">Задача 2</a>
-      </li>
-      <li>
-        <a href="task3/index.html">Задача 3</a>
-      </li>
-      <li>
-        <a href="task4/index.html">Задача 4</a>
-      </li>
-      <li>
-        <a href="task5/index.html">Задача 5</a>
-      </li>
-    </ul>
-  </div>
+<div class="container">
+    <div class="row calc-row align-items-center">
+        <div class="col col-md-4 offset-md-4">
+            <div class="form-group">
+                <div class="card" id="calc">
+                    <div class="card-body">
+                        <input class="form-control input-window" id="inputWindow" value="0">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-danger form-control clear" id="btn_clr">C</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_7">7</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_8">8</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_9">9</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_4">4</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_5">5</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_6">6</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_1">1</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_2">2</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_3">3</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control number" id="btn_0">0</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_mult">*</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_div">/</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_sum">+</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_dif">-</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_sqrt">&#8730</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_point">.</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_negative">&#8723</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-primary form-control operation" id="btn_calc">=</button>
+                            </div>
+                        </div>
+                        <!--Вывод информации-->
+                        <p class="story">История операций:</p>
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="log" id="story_block"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
+
 
